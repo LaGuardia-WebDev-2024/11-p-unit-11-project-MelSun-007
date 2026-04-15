@@ -24,29 +24,34 @@ Select ONE Additional
     <button id="mem1-button">Movie #1</button>
     <button id="mem2-button">Movie #2</button>
     <button id="mem3-button">Movie #3</button>
-    <h1>My Top 3 Movies of <span>all time</span></h1>
+    <h1>My Top 3 Movies of <span>all time (not in order)</span></h1>
     <ol>
       <li>
         <h3 id="mem1">Movie #1</h3>
         <p>More about this memory.</p>
-        <img class="Movie1" src= "https://m.media-amazon.com/images/M/MV5BMjEwNmEwYjgtNTk3ZC00NjljLTg5ZDctZTY3ZGQwZjRkZmQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        <img class="Movie1" src= "https://m.media-amazon.com/images/M/MV5BMjEwNmEwYjgtNTk3ZC00NjljLTg5ZDctZTY3ZGQwZjRkZmQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="200">
        
       </li>
 
       <li>
         <h3 id="mem2">Movie  #2</h3>
         <p>More about this memory.</p>
+      <img class="Movie2" src= "https://cdn.posteritati.com/posters/000/000/037/434/cinema-paradiso-md-web.jpg" width="200">
+      
       </li>
 
       <li>
         <h3 id="mem3">Movie  #3</h3>
         <p>More about this memory</p>
+      <img class="Movie3" src= "https://images.photowall.com/products/72039/all-quiet-on-the-western-front-1.jpg?h=699&q=85" width="200">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
  $(".Movie1").hide()
+  $(".Movie2").hide()
+   $(".Movie3").hide()
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple").text("The Pianist");
@@ -55,13 +60,16 @@ Select ONE Additional
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue"). text("Cinima Paradiso");
+        $("#mem2").css("color", "blue"). text("Cinema Paradiso");
+       $(".Movie2").show(2000)
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("All Quiet on the Western Front");
+      $(".Movie3").show(2000)
+    
       });
 
 
