@@ -28,21 +28,22 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Movie #1</h3>
-        <p>More about this memory.</p>
+        <p class="P1">This movie is based on a true story following Wladyslaw Szpilman, a Jewish pianist trying to survive in the Holocaust. His truggles highlight the horrors of this time and what impact art had on peoples lifes. The storytelling and cinimatography in this movie helps create a strong moving message winning it several Academy Awards in 2003.</p>
         <img class="Movie1" src= "https://m.media-amazon.com/images/M/MV5BMjEwNmEwYjgtNTk3ZC00NjljLTg5ZDctZTY3ZGQwZjRkZmQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" width="200">
        
       </li>
 
       <li>
         <h3 id="mem2">Movie  #2</h3>
-        <p>More about this memory.</p>
+        <p class="P2">More about this memory.</p>
       <img class="Movie2" src= "https://cdn.posteritati.com/posters/000/000/037/434/cinema-paradiso-md-web.jpg" width="200">
       
+    
       </li>
 
       <li>
         <h3 id="mem3">Movie  #3</h3>
-        <p>More about this memory</p>
+        <p class="P3">More about this memory</p>
       <img class="Movie3" src= "https://images.photowall.com/products/72039/all-quiet-on-the-western-front-1.jpg?h=699&q=85" width="200">
       </li>
     </ol>
@@ -52,16 +53,21 @@ Select ONE Additional
  $(".Movie1").hide()
   $(".Movie2").hide()
    $(".Movie3").hide()
+    $(".P1").hide()
+  $(".P2").hide()
+   $(".P3").hide()
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple").text("The Pianist");
         $(".Movie1").show(2000)
+          $(".P1").show(2000)
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue"). text("Cinema Paradiso");
        $(".Movie2").show(2000)
+         $(".P2").show(2000)
       });
 
       // ======================== Button #3
@@ -69,7 +75,7 @@ Select ONE Additional
         $("#mem3").css("color", "green");
         $("#mem3").text("All Quiet on the Western Front");
       $(".Movie3").show(2000)
-    
+      $(".P3").show(2000)
       });
 
 
