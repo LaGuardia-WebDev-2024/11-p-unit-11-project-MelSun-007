@@ -10,3 +10,9 @@ html {
 h1 {
   font-family: "Poetsen One", sans-serif;
 }
+
+h2{font-family:"Poetsen One", sans-serif;}
+
+body{ background-color: rgb(187, 233, 235);}
+
+p{color:blueviolet;}
